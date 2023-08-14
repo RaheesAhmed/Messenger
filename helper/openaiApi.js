@@ -3,7 +3,7 @@ require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
 const { Configuration, OpenAIApi } = require("openai");
-const splitString = require('split-string');
+
 
 const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
@@ -27,7 +27,7 @@ console.log(prompt);
                 model: 'gpt-3.5-turbo',
                 messages: [
                   { "role": "system", "content":`You are a helpful assistant`},
-                    { "role": "user", content: prompt + fullKnowledge  },
+                    { "role": "user", content: prompt + knowledgeBase  },
                   
                   { role: 'assistant', content: 'Hello, how can I assist you?' }
                 ],
@@ -37,7 +37,7 @@ console.log(prompt);
         );
 
         let content = response.data.choices[0].message.content;
-
+        console.log(content)
         return {
             status: 1,
             response: content
