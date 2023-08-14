@@ -1,0 +1,16 @@
+{
+    "name": "helper",
+    "version": "0.0.13",
+    "description": "Node.js portability and api helper",
+    "main": "index.js",
+    "author": "Ivan Popovski ",
+    "keywords": [ "helperjs", "helper", "api", "portability" ],
+    "repository" : {
+        "type": "git",
+        "url": "https://github.com/melkior/helper.git"
+    },
+    "engines": { "node": "*" },
+    "dependencies": {
+        "cjson": "*"
+    }
+}
