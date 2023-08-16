@@ -4,11 +4,15 @@
   "description": "Connecting ChatGPT with Messenger",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "start":"node index.js"
+=======
+    "start": "node index.js",
+>>>>>>> bcbad0bbf216db578d0c69742ed95b1b6611e9a2
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rahees Ahmed",
   "license": "ISC",
   "dependencies": {
     "@supabase/supabase-js": "^2.32.0",
@@ -25,5 +29,6 @@
     "node-fetch": "^3.2.6",
     "openai": "^3.3.0",
     "split-string": "^6.1.0"
-  }
+  },
+  "type": "module"
 }
