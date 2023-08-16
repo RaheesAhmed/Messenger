@@ -10,11 +10,7 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 const knowledgeBase = fs.readFileSync('helper/bot-training.txt', 'utf-8');
-const knowledgeBase2 = fs.readFileSync('helper/bot-trading2.txt', 'utf-8');
-const knowledgeBase3 = fs.readFileSync('helper/bot-traning3.txt', 'utf-8');
-const knowledgeBase4 = fs.readFileSync('helper/training4.txt', 'utf-8');
-const knowledgeBase5 = fs.readFileSync('helper/traning5.txt', 'utf-8');
-const fullKnowledge=knowledgeBase + knowledgeBase2 + knowledgeBase3 + knowledgeBase4 + knowledgeBase5;
+
 const chatCompletion = async (prompt) => {
   
 console.log(prompt);
