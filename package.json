@@ -4,6 +4,7 @@
   "description": "Connecting ChatGPT with Messenger",
   "main": "index.js",
   "scripts": {
+    "start": "node index.jss",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -23,5 +24,6 @@
     "node-fetch": "^3.2.6",
     "openai": "^3.3.0",
     "split-string": "^6.1.0"
-  }
+  },
+  "type":"module"
 }
